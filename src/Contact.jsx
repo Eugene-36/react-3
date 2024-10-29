@@ -1,9 +1,12 @@
-const Contact = ({ name, number }) => {
+const Contact = ({ name, number, onDelete, contactId }) => {
   return (
-    <div>
+    <div className="singleCard">
       <h3>Card</h3>
-      <span>{name}</span>-<span>{number}</span>
-      <button>Delete</button>
+      <div className='buttonBlock'>
+        <span>{name}</span>
+        <span>{number}</span>
+        <button onClick={() => onDelete(contactId)}>Delete</button>
+      </div>
     </div>
   );
 };

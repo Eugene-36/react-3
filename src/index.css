@@ -25,6 +25,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  justify-content: center;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -65,4 +66,44 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+form {
+  text-align: center;
+}
+form .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 0;
+}
+form .input-wrapper input:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+.search-input {
+  display: flex;
+  flex-direction: column;
+}
+.search-input label {
+  margin: 0 0 10px 0;
+}
+.search-input {
+  margin: 20px 0 0 0;
+}
+.buttonBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.buttonBlock button {
+  margin: 10px 0 0 0;
+}
+.singleCard {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.singleCard:not(:last-child) {
+  margin: 0 0 20px 0;
+}
+section:not(:last-child) {
+  padding: 0 0 50px 0;
 }

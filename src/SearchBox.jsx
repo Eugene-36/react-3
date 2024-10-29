@@ -1,6 +1,6 @@
 const SearchBox = ({ search, onSearch }) => {
   return (
-    <div>
+    <div className="search-input">
       <label htmlFor=''>Search by name</label>
       <input
         type='text'
